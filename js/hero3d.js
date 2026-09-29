@@ -47,6 +47,7 @@ export async function mountRobot(container, opts = {}) {
     onReady = () => {},
     onProgress = () => {},
     preserveDrawingBuffer = false,
+    maxFps = 60,                   // phones use 30 to save battery
   } = opts;
 
   const renderer = new WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance', preserveDrawingBuffer });
@@ -138,8 +139,12 @@ export async function mountRobot(container, opts = {}) {
   const clock = new Timer();
   let visible = true;
   let raf = 0;
+  let running = false;
   function wake() {
-    if (!raf && visible) { clock.update(); raf = requestAnimationFrame(tick); }
+    if (raf) return;
+    if (!visible) { running = false; return; }
+    if (!running) { clock.update(); running = true; } // resuming: don't count idle time
+    raf = requestAnimationFrame(tick);
   }
 
   // --- interaction: horizontal drag rotates, vertical drag scrolls the page ---
@@ -206,8 +211,12 @@ export async function mountRobot(container, opts = {}) {
   readScroll();
   let smoothP = scrollP;
 
-  function tick() {
+  const minFrameMs = 1000 / maxFps - 2;
+  let lastFrame = 0;
+  function tick(ts = performance.now()) {
     raf = 0;
+    if (ts - lastFrame < minFrameMs) { raf = requestAnimationFrame(tick); return; }
+    lastFrame = ts;
     clock.update();
     const dt = Math.min(clock.getDelta(), 0.05);
     const now = performance.now();
@@ -233,6 +242,7 @@ export async function mountRobot(container, opts = {}) {
     pivot.scale.setScalar(1 - smoothP * 0.18);
     renderer.render(scene, camera);
     if (active) wake();
+    else running = false;
   }
 
   const io = new IntersectionObserver(([entry]) => {

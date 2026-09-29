@@ -104,13 +104,13 @@ function about(a) {
         <h2 id="about-title" style="font-size:var(--fs-2xl)">${esc(a.title)}</h2>
         ${(a.paragraphs || []).map((p) => `<p>${esc(p)}</p>`).join('')}
       </div>
-      <dl class="facts reveal" style="--reveal-delay:120ms">
+      <ul class="facts reveal" style="--reveal-delay:120ms">
         ${(a.facts || []).map((f) => `
-          <div class="fact">
+          <li class="fact">
             <span class="fact-ico" aria-hidden="true">${icon[f.icon] || icon.globe}</span>
-            <div><dt>${esc(f.label)}</dt><dd>${esc(f.value)}</dd></div>
-          </div>`).join('')}
-      </dl>
+            <span><span class="fact-label">${esc(f.label)}</span><strong class="fact-value">${esc(f.value)}</strong></span>
+          </li>`).join('')}
+      </ul>
     </div>
   </section>`;
 }
@@ -198,8 +198,8 @@ export function mountHome(root, site) {
     statEls.forEach((el) => io.observe(el));
   }
 
-  // Resource counts under each "View resources" button.
-  (site.subteams || []).forEach(async (t) => {
+  // Resource counts under each "View resources" button (after the page settles).
+  const loadCounts = () => (site.subteams || []).forEach(async (t) => {
     try {
       const data = await loadSections(t.slug);
       const n = data.sections?.length || 0;
@@ -207,6 +207,8 @@ export function mountHome(root, site) {
       if (el && n) el.textContent = `${n} section${n === 1 ? '' : 's'} of guides & links`;
     } catch (_) { /* counts are optional */ }
   });
+  if (window.requestIdleCallback) requestIdleCallback(loadCounts, { timeout: 3000 });
+  else setTimeout(loadCounts, 1500);
 
   scheduleRobot(qs('.robot-stage', root), qs('.hero', root));
 }
@@ -224,7 +226,7 @@ function webglAvailable() {
 }
 
 function scheduleRobot(stage, heroEl) {
-  if (!stage || !webglAvailable()) return;
+  if (!stage) return;
   const conn = navigator.connection || {};
   if (conn.saveData) return;                     // respect data saver: keep the poster
   const small = window.matchMedia('(max-width: 900px)').matches;
@@ -232,7 +234,7 @@ function scheduleRobot(stage, heroEl) {
   const src = small || lowMem ? 'assets/robot/robot-lo.glb' : 'assets/robot/robot-hi.glb';
 
   const start = async () => {
-    if (!stage.isConnected) return;
+    if (!stage.isConnected || !webglAvailable()) return;
     try {
       const { mountRobot } = await import('../hero3d.js');
       if (!stage.isConnected) return;
@@ -240,6 +242,7 @@ function scheduleRobot(stage, heroEl) {
         src,
         reducedMotion: prefersReducedMotion(),
         pixelRatioCap: small ? 1.5 : 2,
+        maxFps: small ? 30 : 60,
         scrollTarget: heroEl,
         onReady: () => stage.classList.add('is-live'),
       });
@@ -251,9 +254,22 @@ function scheduleRobot(stage, heroEl) {
     }
   };
 
-  // Wait until the page has loaded and the browser is idle so the 3D view
-  // never competes with the first paint.
-  const idle = () => (window.requestIdleCallback ? requestIdleCallback(start, { timeout: 2500 }) : setTimeout(start, 600));
-  if (document.readyState === 'complete') idle();
-  else window.addEventListener('load', idle, { once: true });
+  // The 3D view loads on the visitor's first interaction (mouse move, touch,
+  // scroll, key press). Until then the poster, rendered from the same model and
+  // camera, is shown, so first paint stays fast and the swap is invisible.
+  const events = ['pointermove', 'pointerdown', 'touchstart', 'keydown', 'wheel', 'scroll'];
+  let started = false;
+  const go = () => {
+    if (started) return;
+    started = true;
+    events.forEach((ev) => window.removeEventListener(ev, go));
+    stage.removeEventListener('focus', go);
+    start();
+  };
+  const arm = () => {
+    events.forEach((ev) => window.addEventListener(ev, go, { passive: true, once: true }));
+    stage.addEventListener('focus', go, { once: true });
+  };
+  if (document.readyState === 'complete') arm();
+  else window.addEventListener('load', arm, { once: true });
 }

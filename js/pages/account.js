@@ -298,6 +298,8 @@ async function renderAdmin(root, ctx) {
       </table>`;
   };
   renderList(editorsDoc);
+  // GitHub Pages can lag a minute behind the repo, so refresh the list from GitHub.
+  if (gh) gh.getJSON(EDITORS_PATH).then((res) => res && renderList(normalize(res.data))).catch(() => {});
 
   qs('#editor-list', root).addEventListener('click', async (e) => {
     const rm = e.target.closest('[data-remove]');
