@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "subteam": "programming",
+  "updated": "2026-09-29",
+  "sections": [
+    {
+      "id": "start-here",
+      "title": "Start here",
+      "blocks": [
+        {
+          "id": "b001",
+          "type": "text",
+          "html": "<p>Welcome to IHOT programming! Work through this checklist in your first week. Ask a lead or mentor whenever you get stuck; that is what we are here for.</p><ol><li>Install the <strong>WPILib</strong> suite for the current season (it includes VS Code, Java and all FRC tools).</li><li>Install <strong>Git</strong> and create a GitHub account, then ask a lead to add you to the team organization.</li><li>Clone the current robot code and make sure it <strong>builds</strong> on your laptop.</li><li>Read the Zero-to-Robot guide below, then deploy code to a practice robot with a lead watching.</li></ol><p><em>Safety note:</em> always tell the drive team before you deploy or enable a robot.</p>"
+        },
+        {
+          "id": "b002",
+          "type": "link",
+          "url": "https://docs.wpilib.org/en/stable/docs/zero-to-robot/introduction.html",
+          "title": "Zero to Robot guide",
+          "description": "Step-by-step setup from a blank laptop to a driving robot."
+        }
+      ]
+    },
+    {
+      "id": "wpilib-and-frc-tools",
+      "title": "WPILib and FRC tools",
+      "blocks": [
+        {
+          "id": "b003",
+          "type": "link",
+          "url": "https://docs.wpilib.org/en/stable/",
+          "title": "WPILib documentation",
+          "description": "The official reference for FRC programming."
+        },
+        {
+          "id": "b004",
+          "type": "link",
+          "url": "https://github.com/wpilibsuite/allwpilib/releases",
+          "title": "WPILib installer releases",
+          "description": "Download the installer for the current season."
+        },
+        {
+          "id": "b005",
+          "type": "link",
+          "url": "https://docs.wpilib.org/en/stable/docs/software/commandbased/index.html",
+          "title": "Command-based programming",
+          "description": "How subsystems, commands and triggers fit together."
+        }
+      ]
+    },
+    {
+      "id": "vendor-libraries",
+      "title": "Vendor libraries",
+      "blocks": [
+        {
+          "id": "b006",
+          "type": "text",
+          "html": "<p>Most motors and sensors on our robot need a <strong>vendor library</strong>. Install them from VS Code with <em>WPILib: Manage Vendor Libraries</em>, and keep versions in sync across everyone's laptops.</p>"
+        },
+        {
+          "id": "b007",
+          "type": "link",
+          "url": "https://v6.docs.ctr-electronics.com/",
+          "title": "CTRE Phoenix 6",
+          "description": "Talon FX (Kraken, Falcon), CANcoder and Pigeon 2 documentation."
+        },
+        {
+          "id": "b008",
+          "type": "link",
+          "url": "https://docs.revrobotics.com/revlib",
+          "title": "REVLib",
+          "description": "SPARK MAX and SPARK Flex motor controller documentation."
+        },
+        {
+          "id": "b009",
+          "type": "link",
+          "url": "https://pathplanner.dev/",
+          "title": "PathPlanner",
+          "description": "Autonomous path planning and on-the-fly paths."
+        },
+        {
+          "id": "b010",
+          "type": "link",
+          "url": "https://docs.advantagekit.org/",
+          "title": "AdvantageKit",
+          "description": "Logging and replay framework for debugging matches."
+        },
+        {
+          "id": "b011",
+          "type": "link",
+          "url": "https://docs.photonvision.org/",
+          "title": "PhotonVision",
+          "description": "Open-source vision processing for AprilTags and game pieces."
+        }
+      ]
+    },
+    {
+      "id": "our-code-and-git-workflow",
+      "title": "Our code and Git workflow",
+      "blocks": [
+        {
+          "id": "b012",
+          "type": "link",
+          "url": "https://github.com/ihot-team1414",
+          "title": "IHOT on GitHub",
+          "description": "All of the team's robot code repositories."
+        },
+        {
+          "id": "b013",
+          "type": "text",
+          "html": "<h3>How we work in Git</h3><ul><li>Create a <strong>branch</strong> for every feature or fix. Never commit straight to <code>main</code> during build season.</li><li>Commit small, working changes with clear messages.</li><li>Open a <strong>pull request</strong> and get one review before merging.</li><li>Tag the code that runs at each event so we can always go back to it.</li></ul>"
+        }
+      ]
+    },
+    {
+      "id": "learning-java",
+      "title": "Learning Java",
+      "blocks": [
+        {
+          "id": "b014",
+          "type": "link",
+          "url": "https://dev.java/learn/",
+          "title": "Learn Java (dev.java)",
+          "description": "Official Java tutorials from the language team, free."
+        },
+        {
+          "id": "b015",
+          "type": "text",
+          "html": "<p>You do not need to know Java before joining. Focus on <strong>classes and objects</strong>, <strong>methods</strong>, <strong>if/else and loops</strong>, and <strong>interfaces</strong>. That covers most of what robot code uses.</p>"
+        }
+      ]
+    }
+  ]
+}

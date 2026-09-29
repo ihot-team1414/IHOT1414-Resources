@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "subteam": "electrical",
+  "updated": "2026-09-29",
+  "sections": [
+    {
+      "id": "start-here-the-control-system",
+      "title": "Start here: the control system",
+      "blocks": [
+        {
+          "id": "b032",
+          "type": "text",
+          "html": "<p>The electrical subteam wires everything that makes the robot move and think. Start by learning what each component does and how power and signals flow between them.</p>"
+        },
+        {
+          "id": "b033",
+          "type": "link",
+          "url": "https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-1/intro-to-frc-robot-wiring.html",
+          "title": "Wiring the FRC control system",
+          "description": "Official step-by-step wiring guide."
+        },
+        {
+          "id": "b034",
+          "type": "link",
+          "url": "https://docs.wpilib.org/en/stable/docs/controls-overviews/control-system-hardware.html",
+          "title": "Control system hardware overview",
+          "description": "What every component on the robot does."
+        }
+      ]
+    },
+    {
+      "id": "wiring-standards",
+      "title": "Wiring standards",
+      "blocks": [
+        {
+          "id": "b035",
+          "type": "text",
+          "html": "<ul><li><strong>Red is positive, black is negative.</strong> No exceptions.</li><li>Match wire gauge to the breaker. Check the wire-size table in the current game manual.</li><li>Label both ends of every wire and CAN cable.</li><li>Leave service loops and secure wires every few inches so nothing rubs or snags.</li><li>Keep the main battery and breaker easy to reach in the pit.</li></ul>"
+        },
+        {
+          "id": "b036",
+          "type": "link",
+          "url": "https://www.firstinspires.org/resource-library/frc/competition-manual-qa-system",
+          "title": "FRC game manual and Q&A",
+          "description": "Robot rules, including electrical and wire-size requirements."
+        }
+      ]
+    },
+    {
+      "id": "can-bus",
+      "title": "CAN bus",
+      "blocks": [
+        {
+          "id": "b037",
+          "type": "text",
+          "html": "<p>Motor controllers and many sensors talk over the <strong>CAN bus</strong>, a single daisy-chained network.</p><ul><li>Give every device a unique ID and write it on the device.</li><li>Keep the chain short and neat, and make sure it is terminated at the end.</li><li>If one device drops out, check the connectors on either side of it first.</li></ul>"
+        },
+        {
+          "id": "b038",
+          "type": "link",
+          "url": "https://v6.docs.ctr-electronics.com/",
+          "title": "CTRE Phoenix 6 docs",
+          "description": "Configuring CTRE devices with Phoenix Tuner X."
+        },
+        {
+          "id": "b039",
+          "type": "link",
+          "url": "https://docs.revrobotics.com/",
+          "title": "REV Robotics docs",
+          "description": "Configuring REV devices with the REV Hardware Client."
+        }
+      ]
+    },
+    {
+      "id": "pit-checklist",
+      "title": "Pit checklist",
+      "blocks": [
+        {
+          "id": "b040",
+          "type": "text",
+          "html": "<p>Run this between every match:</p><ul><li>Swap in a fully charged battery and check its voltage.</li><li>Check that the main breaker and all branch breakers are seated.</li><li>Tug-test connectors and look for loose or rubbing wires.</li><li>Confirm the radio and roboRIO status lights look normal.</li></ul>"
+        }
+      ]
+    }
+  ]
+}

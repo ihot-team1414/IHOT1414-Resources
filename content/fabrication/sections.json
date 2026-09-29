@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "subteam": "fabrication",
+  "updated": "2026-09-29",
+  "sections": [
+    {
+      "id": "shop-safety-first",
+      "title": "Shop safety first",
+      "blocks": [
+        {
+          "id": "b027",
+          "type": "text",
+          "html": "<p><strong>Nobody uses a tool until they have been trained and signed off on it.</strong> These rules apply every time you enter the shop:</p><ul><li>Safety glasses on at all times, even if you are only watching.</li><li>Closed-toe shoes, no loose clothing or jewelry, and long hair tied back.</li><li>Never work alone. A trained member or mentor must be present.</li><li>Know where the first aid kit, fire extinguisher and emergency stop are.</li><li>Clean up your station before you leave.</li></ul>"
+        }
+      ]
+    },
+    {
+      "id": "tool-training",
+      "title": "Tool training",
+      "blocks": [
+        {
+          "id": "b028",
+          "type": "text",
+          "html": "<p>Training goes in three steps for every machine:</p><ol><li><strong>Watch:</strong> a trained member demonstrates the tool and its hazards.</li><li><strong>Practice:</strong> you make a test part while they supervise.</li><li><strong>Sign-off:</strong> a lead or mentor confirms you can use it on your own.</li></ol><p>Start with hand tools, then the drill press and band saw, before moving to larger machines.</p>"
+        },
+        {
+          "id": "b029",
+          "type": "link",
+          "url": "https://www.frcdesign.org/",
+          "title": "FRCDesign.org",
+          "description": "Manufacturing and design-for-manufacturing guides for FRC."
+        }
+      ]
+    },
+    {
+      "id": "fasteners-and-hardware",
+      "title": "Fasteners and hardware",
+      "blocks": [
+        {
+          "id": "b030",
+          "type": "text",
+          "html": "<ul><li>Most structure uses <strong>#10-32</strong> and <strong>1/4-20</strong> bolts with nylon-insert lock nuts.</li><li>Use <strong>rivets</strong> for gussets and sheet metal that never needs to come apart.</li><li>Use <strong>blue thread-locker</strong> on bolts that go into tapped holes and could vibrate loose.</li><li>Always deburr cut edges and drilled holes before assembly.</li></ul>"
+        }
+      ]
+    },
+    {
+      "id": "from-drawing-to-part",
+      "title": "From drawing to part",
+      "blocks": [
+        {
+          "id": "b031",
+          "type": "text",
+          "html": "<ol><li>Get the drawing (or DXF/toolpath) from CAD and check it is the latest revision.</li><li>Mark and cut stock, then machine features in order.</li><li>Deburr and check every critical dimension against the drawing.</li><li>Label the part and log it as done so assembly knows it is ready.</li></ol>"
+        }
+      ]
+    }
+  ]
+}

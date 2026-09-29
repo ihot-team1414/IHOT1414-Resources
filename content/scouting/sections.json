@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "subteam": "scouting",
+  "updated": "2026-09-29",
+  "sections": [
+    {
+      "id": "start-here",
+      "title": "Start here",
+      "blocks": [
+        {
+          "id": "b050",
+          "type": "text",
+          "html": "<p>Scouts watch every match at an event and record how each robot performs. That data drives our <strong>match strategy</strong> and our <strong>alliance pick list</strong>.</p><ul><li>Learn the current game rules and scoring first.</li><li>Practice scouting on match videos before your first event.</li><li>Stay focused on one robot per match and record what actually happened, not what you expected.</li></ul>"
+        }
+      ]
+    },
+    {
+      "id": "know-the-game",
+      "title": "Know the game",
+      "blocks": [
+        {
+          "id": "b051",
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=_fybREErgyM",
+          "title": "2026 FRC game animation: REBUILT presented by Haas"
+        },
+        {
+          "id": "b052",
+          "type": "link",
+          "url": "https://www.firstinspires.org/resource-library/frc/competition-manual-qa-system",
+          "title": "FRC game manual and Q&A",
+          "description": "Scoring rules every scout should know."
+        }
+      ]
+    },
+    {
+      "id": "data-sources",
+      "title": "Data sources",
+      "blocks": [
+        {
+          "id": "b053",
+          "type": "link",
+          "url": "https://www.thebluealliance.com/team/1414",
+          "title": "The Blue Alliance: Team 1414",
+          "description": "Match results, rankings and videos for every event."
+        },
+        {
+          "id": "b054",
+          "type": "link",
+          "url": "https://www.statbotics.io/team/1414",
+          "title": "Statbotics: Team 1414",
+          "description": "EPA ratings and predictions to compare teams."
+        },
+        {
+          "id": "b055",
+          "type": "link",
+          "url": "https://frc-events.firstinspires.org/",
+          "title": "FRC Events",
+          "description": "Official schedules, rankings and results from FIRST."
+        },
+        {
+          "id": "b056",
+          "type": "link",
+          "url": "https://www.thebluealliance.com/apidocs",
+          "title": "The Blue Alliance API",
+          "description": "Pull match data into our own spreadsheets and apps."
+        }
+      ]
+    },
+    {
+      "id": "match-strategy",
+      "title": "Match strategy",
+      "blocks": [
+        {
+          "id": "b057",
+          "type": "text",
+          "html": "<p>Before each match, the strategy lead briefs the drive team using our data:</p><ul><li>What each partner and opponent robot does best.</li><li>Who plays which role in auto and teleop.</li><li>What the opponents are likely to do, and how we counter it.</li></ul>"
+        }
+      ]
+    },
+    {
+      "id": "building-the-pick-list",
+      "title": "Building the pick list",
+      "blocks": [
+        {
+          "id": "b058",
+          "type": "text",
+          "html": "<ol><li>Rank teams by the data first, using averages and consistency, not one great match.</li><li>Add qualitative notes: driving, reliability, defense.</li><li>Pick robots that <strong>complement</strong> ours rather than copy it.</li><li>Keep a backup list in case top choices are taken.</li></ol>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "subteam": "cad",
+  "updated": "2026-09-29",
+  "sections": [
+    {
+      "id": "start-here",
+      "title": "Start here",
+      "blocks": [
+        {
+          "id": "b016",
+          "type": "text",
+          "html": "<p>Every mechanism starts in CAD. In your first weeks you will learn Onshape, model a few simple parts and then help on a real mechanism with a lead.</p><ol><li>Create an Onshape <strong>education account</strong> with your school email.</li><li>Complete the Onshape fundamentals course (linked below).</li><li>Ask a lead to share the team's current-season documents with you.</li><li>Model a simple part from a drawing, then get it reviewed.</li></ol>"
+        },
+        {
+          "id": "b017",
+          "type": "link",
+          "url": "https://learn.onshape.com/",
+          "title": "Onshape Learning Center",
+          "description": "Free self-paced courses, from sketching to assemblies."
+        }
+      ]
+    },
+    {
+      "id": "frc-design-references",
+      "title": "FRC design references",
+      "blocks": [
+        {
+          "id": "b018",
+          "type": "link",
+          "url": "https://www.frcdesign.org/",
+          "title": "FRCDesign.org",
+          "description": "Free FRC-specific CAD training and mechanism design guides."
+        },
+        {
+          "id": "b019",
+          "type": "link",
+          "url": "https://www.reca.lc/",
+          "title": "ReCalc",
+          "description": "Mechanism calculator for gear ratios, flywheels, arms and elevators."
+        },
+        {
+          "id": "b020",
+          "type": "link",
+          "url": "https://www.chiefdelphi.com/",
+          "title": "Chief Delphi",
+          "description": "The FRC community forum: robot reveals, CAD releases and technical threads."
+        }
+      ]
+    },
+    {
+      "id": "vendor-parts-and-cad",
+      "title": "Vendor parts and CAD",
+      "blocks": [
+        {
+          "id": "b021",
+          "type": "text",
+          "html": "<p>Use vendor CAD models instead of modeling off-the-shelf parts yourself. It saves time and keeps hole patterns accurate.</p>"
+        },
+        {
+          "id": "b022",
+          "type": "link",
+          "url": "https://wcproducts.com/",
+          "title": "WestCoast Products",
+          "description": "Gearboxes, swerve modules, structure and hardware."
+        },
+        {
+          "id": "b023",
+          "type": "link",
+          "url": "https://www.revrobotics.com/",
+          "title": "REV Robotics",
+          "description": "Motors, controllers, MAXSwerve and extrusion."
+        },
+        {
+          "id": "b024",
+          "type": "link",
+          "url": "https://www.andymark.com/",
+          "title": "AndyMark",
+          "description": "Drivetrains, wheels, gearboxes and field elements."
+        },
+        {
+          "id": "b025",
+          "type": "link",
+          "url": "https://www.thethriftybot.com/",
+          "title": "The Thrifty Bot",
+          "description": "Budget-friendly swerve, elevator and structure parts."
+        }
+      ]
+    },
+    {
+      "id": "design-review-checklist",
+      "title": "Design review checklist",
+      "blocks": [
+        {
+          "id": "b026",
+          "type": "text",
+          "html": "<p>Before a design goes to fabrication, walk through this list with a lead:</p><ul><li>Does it fit inside frame perimeter and height limits for the current game?</li><li>Are all parts fully constrained and named clearly?</li><li>Can every bolt be reached with a tool on the real robot?</li><li>Is the weight estimate updated in the robot master assembly?</li><li>Are drawings ready for every part the shop needs to make?</li></ul>"
+        }
+      ]
+    }
+  ]
+}

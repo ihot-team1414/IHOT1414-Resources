@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "subteam": "operations",
+  "updated": "2026-09-29",
+  "sections": [
+    {
+      "id": "what-operations-does",
+      "title": "What operations does",
+      "blocks": [
+        {
+          "id": "b041",
+          "type": "text",
+          "html": "<p>Operations is everything that keeps IHOT running off the field: <strong>sponsorships and budget</strong>, <strong>outreach</strong>, <strong>media and social</strong>, <strong>awards</strong> and <strong>event logistics</strong>. If the robot is the engine, operations is the fuel.</p>"
+        }
+      ]
+    },
+    {
+      "id": "brand-kit",
+      "title": "Brand kit",
+      "blocks": [
+        {
+          "id": "b042",
+          "type": "text",
+          "html": "<p>Use the official logo files as they are. Do not recolor, stretch or redraw them. Our colors:</p><ul><li><strong>IHOT blue</strong> #3E75B7</li><li><strong>Navy</strong> #07121F and #142943</li><li><strong>Light blue</strong> #7EA9DD and #D6E4F5</li></ul><p>Headings use Space Grotesk and body text uses Inter.</p>"
+        },
+        {
+          "id": "b043",
+          "type": "link",
+          "url": "assets/logo/ihot-mark.svg",
+          "title": "Logo mark (SVG)",
+          "description": "The molecule mark on a transparent background."
+        },
+        {
+          "id": "b044",
+          "type": "link",
+          "url": "assets/logo/ihot-wordmark.png",
+          "title": "Logo wordmark (PNG, white)",
+          "description": "For dark backgrounds."
+        }
+      ]
+    },
+    {
+      "id": "sponsorships",
+      "title": "Sponsorships",
+      "blocks": [
+        {
+          "id": "b045",
+          "type": "text",
+          "html": "<ol><li>Research local companies connected to engineering, manufacturing or our families.</li><li>Reach out with a short, personal message and our sponsor packet.</li><li>Follow up, and thank every sponsor publicly on social media and at events.</li><li>Send sponsors a season recap with photos of what they helped build.</li></ol>"
+        }
+      ]
+    },
+    {
+      "id": "social-media",
+      "title": "Social media",
+      "blocks": [
+        {
+          "id": "b046",
+          "type": "link",
+          "url": "https://www.instagram.com/ihot1414/",
+          "title": "IHOT on Instagram",
+          "description": "Build-season updates, events and team life."
+        },
+        {
+          "id": "b047",
+          "type": "link",
+          "url": "https://x.com/ihot1414",
+          "title": "IHOT on X",
+          "description": "Event updates and match results."
+        },
+        {
+          "id": "b048",
+          "type": "text",
+          "html": "<p>Before posting, check that everyone in a photo is OK with it, and never post the robot's secret mechanisms before the reveal.</p>"
+        }
+      ]
+    },
+    {
+      "id": "first-resources",
+      "title": "FIRST resources",
+      "blocks": [
+        {
+          "id": "b049",
+          "type": "link",
+          "url": "https://www.firstinspires.org/",
+          "title": "FIRST",
+          "description": "Program information, awards and season resources."
+        }
+      ]
+    }
+  ]
+}
