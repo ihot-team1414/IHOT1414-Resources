@@ -1,0 +1,164 @@
+{
+  "_README": "All home-page text lives in this file. Edit a value, commit, and the site updates. Keys that start with an underscore are notes and are never shown on the site.",
+  "_VERIFY": [
+    "stats: confirm each number and label (sourced from The Blue Alliance, Sept 2026).",
+    "subteams[*].tags and summaries: written as realistic starting copy; confirm tools (Java/WPILib, Onshape, CNC) match what the team actually uses.",
+    "about.paragraphs[1]: general description of how the team works; adjust to match the team.",
+    "sponsors.items: names taken from The Blue Alliance team listing; confirm the current list and add logos/links.",
+    "join.steps: confirm how new members actually join (meeting timing, rotation).",
+    "team.email is empty on purpose. Add the team's real contact email to show it on the site."
+  ],
+
+  "team": {
+    "name": "IHOT Robotics",
+    "short": "IHOT",
+    "number": 1414,
+    "school": "Atlanta International School",
+    "city": "Atlanta, Georgia",
+    "rookieYear": 2004,
+    "district": "Peachtree District",
+    "email": "",
+    "socials": [
+      { "label": "Instagram", "icon": "instagram", "url": "https://www.instagram.com/ihot1414/" },
+      { "label": "X (Twitter)", "icon": "x", "url": "https://x.com/ihot1414" },
+      { "label": "GitHub", "icon": "github", "url": "https://github.com/ihot-team1414" },
+      { "label": "The Blue Alliance", "icon": "tba", "url": "https://www.thebluealliance.com/team/1414" },
+      { "label": "Statbotics", "icon": "chart", "url": "https://www.statbotics.io/team/1414" }
+    ]
+  },
+
+  "seo": {
+    "title": "IHOT Robotics | FRC Team 1414",
+    "description": "IHOT Robotics is FIRST Robotics Competition Team 1414 from Atlanta International School. Guides, training and resources for programming, CAD, fabrication, electrical, operations and scouting."
+  },
+
+  "hero": {
+    "eyebrow": "FRC Team 1414 · Atlanta, GA",
+    "headline": "Built by students.",
+    "headlineAccent": "Engineered to compete.",
+    "subheadline": "IHOT Robotics designs, builds and programs a competition robot every season. This is our team hub: every guide, template and lesson our six subteams rely on, all in one place.",
+    "primaryCta": { "label": "Explore resources", "href": "#/subteams" },
+    "secondaryCta": { "label": "Join IHOT", "href": "#/join" },
+    "meta": [
+      { "icon": "calendar", "text": "Competing since 2004" },
+      { "icon": "school", "text": "Atlanta International School" },
+      { "icon": "trophy", "text": "Peachtree District" }
+    ],
+    "robotHint": "Drag to rotate our robot"
+  },
+
+  "stats": [
+    { "value": "2004", "label": "Rookie year: two decades of FRC" },
+    { "value": "20+", "label": "Seasons of competition" },
+    { "value": "Top 5", "label": "Peachtree District ranking in 2024" },
+    { "value": "Worlds", "label": "Qualified for the 2024 FIRST Championship in Houston" }
+  ],
+
+  "subteamsIntro": {
+    "eyebrow": "Six subteams, one robot",
+    "title": "Find your place on the team",
+    "text": "Every IHOT robot is the work of six subteams that depend on each other. Pick one to see what they do, then dive into their resources."
+  },
+
+  "subteams": [
+    {
+      "slug": "programming",
+      "name": "Programming",
+      "tagline": "Code that drives the robot",
+      "summary": "We turn motors and sensors into a robot that can drive itself. Programmers write the code for our swerve drive, autonomous routines and driver controls, then tune it on the practice field until it is match-ready.",
+      "tags": ["Java & WPILib", "Autonomous", "Vision", "Git"]
+    },
+    {
+      "slug": "cad",
+      "name": "CAD",
+      "tagline": "Design every part before we make it",
+      "summary": "Every part of the robot exists in CAD before it exists in aluminum. Our designers model mechanisms in Onshape, check gear ratios and weight, and produce the drawings that fabrication cuts from.",
+      "tags": ["Onshape", "Mechanism design", "Drawings", "Design reviews"]
+    },
+    {
+      "slug": "fabrication",
+      "name": "Fabrication",
+      "tagline": "From drawing to real parts",
+      "summary": "Fabrication brings the design to life. Members learn to use the shop's tools safely, from hand tools and drill presses to CNC machines, and turn CAD drawings into precise, reliable robot parts.",
+      "tags": ["Shop safety", "Machining", "CNC", "Assembly"]
+    },
+    {
+      "slug": "electrical",
+      "name": "Electrical",
+      "tagline": "The robot's nervous system",
+      "summary": "Electrical wires everything together: batteries, breakers, motor controllers, sensors and the CAN network. Clean, labeled and serviceable wiring is how we keep the robot running through a long event.",
+      "tags": ["Wiring", "CAN bus", "Power", "Pit checks"]
+    },
+    {
+      "slug": "operations",
+      "name": "Operations",
+      "tagline": "Keeping the team running",
+      "summary": "Operations keeps the whole team moving. From sponsorships and budgets to outreach, social media and event logistics, this subteam builds the relationships and resources that make every season possible.",
+      "tags": ["Sponsorships", "Outreach", "Media", "Awards"]
+    },
+    {
+      "slug": "scouting",
+      "name": "Scouting",
+      "tagline": "Data that wins matches",
+      "summary": "Scouting wins matches before they start. Scouts collect data on every robot at an event, turn it into match strategy and pick lists, and give our drive team an edge in eliminations.",
+      "tags": ["Match data", "Strategy", "Pick lists", "Analytics"]
+    }
+  ],
+
+  "about": {
+    "eyebrow": "About the team",
+    "title": "Two decades of students building robots",
+    "paragraphs": [
+      "IHOT Robotics is FIRST Robotics Competition Team 1414, based at Atlanta International School in Atlanta, Georgia. We have been building robots since our rookie season in 2004.",
+      "Each season brings a brand-new game and a few short weeks to design, build and program a robot that can play it. Students lead every part of that process, with mentors who coach rather than build. Along the way, members pick up real engineering, business and leadership skills, and spend plenty of late nights in the shop."
+    ],
+    "facts": [
+      { "icon": "calendar", "label": "Rookie year", "value": "2004" },
+      { "icon": "school", "label": "School", "value": "Atlanta International School" },
+      { "icon": "pin", "label": "Based in", "value": "Atlanta, Georgia" },
+      { "icon": "trophy", "label": "Competes in", "value": "FIRST Peachtree District" }
+    ]
+  },
+
+  "sponsors": {
+    "eyebrow": "Sponsors",
+    "title": "Powered by our partners",
+    "text": "IHOT runs on the generosity of partners who believe in hands-on STEM education. Thank you for making our season possible.",
+    "items": [
+      { "name": "Atlanta International School", "url": "", "logo": "" },
+      { "name": "Buckhead Primary Care Clinic", "url": "", "logo": "" },
+      { "name": "Here Plus Now", "url": "", "logo": "" },
+      { "name": "Class One Equipment", "url": "", "logo": "" },
+      { "name": "ZYCI", "url": "", "logo": "" },
+      { "name": "Smartlogic", "url": "", "logo": "" },
+      { "name": "The Orange Foundry", "url": "", "logo": "" },
+      { "name": "ERMI Motion", "url": "", "logo": "" }
+    ],
+    "cta": {
+      "title": "Become a sponsor",
+      "text": "Sponsorships pay for parts, tools, event registration and travel. We would love to show you what your support builds.",
+      "label": "Get in touch",
+      "href": "#/join"
+    }
+  },
+
+  "join": {
+    "eyebrow": "Join us",
+    "title": "No experience needed. Just curiosity.",
+    "text": "If you are curious, willing to learn and ready to be part of a team, there is a place for you on IHOT, whether that is writing code, machining parts or leading outreach.",
+    "steps": [
+      { "title": "Come to an interest meeting", "text": "We hold them at the start of the school year. Watch for announcements at school and on our Instagram." },
+      { "title": "Try every subteam", "text": "New members get to see programming, CAD, fabrication, electrical, operations and scouting before choosing a focus." },
+      { "title": "Learn with this hub", "text": "Every subteam keeps its training guides here, so you can get up to speed at your own pace." }
+    ],
+    "contactTitle": "Get in touch",
+    "contactText": "Students, parents, mentors and sponsors are all welcome to reach out.",
+    "primaryCta": { "label": "Message us on Instagram", "href": "https://www.instagram.com/ihot1414/" },
+    "secondaryCta": { "label": "Browse resources", "href": "#/subteams" }
+  },
+
+  "footer": {
+    "tagline": "FIRST Robotics Competition Team 1414 from Atlanta International School in Atlanta, Georgia.",
+    "legal": "FIRST® and FIRST® Robotics Competition are registered trademarks of FIRST. This site is built and maintained by IHOT students."
+  }
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Brand asset renderer (maintainer tool)</title>
+<!--
+  Maintainer tool used to generate assets/img/og-image.png and the PNG icons.
+  Open in a browser at the exact viewport size and take a screenshot:
+    ?mode=og                       -> 1200x630 social card
+    ?mode=icon&size=180            -> square icon on navy (apple-touch-icon)
+  The logo files are used as-is; nothing is redrawn.
+-->
+<style>
+  @font-face { font-family: "Space Grotesk"; src: url("../vendor/fonts/space-grotesk-latin-wght.woff2") format("woff2"); font-weight: 300 700; }
+  @font-face { font-family: "Inter"; src: url("../vendor/fonts/inter-latin-wght.woff2") format("woff2"); font-weight: 100 900; }
+  html, body { margin: 0; background: #07121f; }
+  .og {
+    position: relative; width: 1200px; height: 630px; overflow: hidden; color: #f5f8fc;
+    background:
+      radial-gradient(120% 90% at 85% 100%, rgba(62,117,183,.85) 0%, rgba(47,90,142,.45) 30%, rgba(20,41,67,0) 65%),
+      linear-gradient(165deg, #07121f 0%, #0c1c2e 45%, #142943 75%, #22446d 100%);
+    font-family: Inter, sans-serif;
+  }
+  .og::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(126,169,221,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(126,169,221,.08) 1px, transparent 1px);
+    background-size: 48px 48px;
+    -webkit-mask-image: radial-gradient(90% 80% at 70% 40%, #000 30%, transparent 80%);
+  }
+  .og .copy { position: absolute; left: 72px; top: 76px; width: 560px; }
+  .og .logo { height: 96px; display: block; margin-bottom: 44px; }
+  .og h1 { font-family: "Space Grotesk", sans-serif; font-size: 62px; line-height: 1; letter-spacing: -0.035em; margin: 0 0 24px; }
+  .og h1 span { display: block; color: #7ea9dd; }
+  .og p { font-size: 24px; color: #b6c2d2; margin: 0; }
+  .og .robot { position: absolute; right: -90px; bottom: -40px; width: 760px; }
+  .icon { display: grid; place-items: center; background: #07121f; }
+  .icon img { width: 70%; height: 70%; }
+</style>
+</head>
+<body>
+<script>
+  const q = new URLSearchParams(location.search);
+  const mode = q.get('mode') || 'og';
+  if (mode === 'og') {
+    document.body.innerHTML = `
+      <div class="og">
+        <img class="robot" src="../assets/robot/robot-poster.webp" alt="">
+        <div class="copy">
+          <img class="logo" src="../assets/logo/ihot-wordmark.png" alt="IHOT Robotics">
+          <h1>Built by students.<span>Engineered to compete.</span></h1>
+          <p>FRC Team 1414 · Atlanta, Georgia</p>
+        </div>
+      </div>`;
+  } else {
+    const size = parseInt(q.get('size') || '180', 10);
+    document.body.innerHTML = `<div class="icon" style="width:${size}px;height:${size}px"><img src="../assets/logo/ihot-mark.svg" alt=""></div>`;
+  }
+  document.fonts.ready.then(() => Promise.all([...document.images].map((i) => i.decode().catch(() => {})))).then(() => { document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>

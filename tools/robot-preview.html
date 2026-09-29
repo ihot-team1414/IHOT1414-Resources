@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Robot preview (maintainer tool)</title>
+<style>
+  html, body { margin: 0; height: 100%; background: linear-gradient(160deg, #07121f 0%, #142943 55%, #3e75b7 130%); color: #f5f8fc; font: 14px system-ui, sans-serif; }
+  .transparent, .transparent body { background: transparent !important; }
+  #stage { position: fixed; inset: 0; }
+  #hud { position: fixed; left: 12px; bottom: 12px; opacity: .8; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="hud">Robot preview. Query params: ?src=../assets/robot/robot-hi.glb&amp;yaw=-0.65&amp;transparent=1</div>
+<script type="module">
+  // Maintainer tool: preview a robot GLB with the same lighting/materials as the hero,
+  // and render the poster image (open with ?transparent=1, then screenshot the canvas).
+  import { mountRobot } from '../js/hero3d.js';
+  const q = new URLSearchParams(location.search);
+  if (q.get('transparent')) { document.documentElement.classList.add('transparent'); document.getElementById('hud').remove(); }
+  const v = await mountRobot(document.getElementById('stage'), {
+    src: q.get('src') || '../assets/robot/robot-hi.glb',
+    reducedMotion: true,
+    preserveDrawingBuffer: true,
+    onReady: () => { document.body.dataset.ready = '1'; },
+  });
+  if (q.get('yaw')) { v.setYaw(parseFloat(q.get('yaw'))); v.renderOnce(); }
+  window.__robot = v;
+</script>
+</body>
+</html>
