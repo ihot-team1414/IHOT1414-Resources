@@ -23,6 +23,28 @@
         "data": "ju9XNFIe/89NQ2CYjBVJPP0t2QBM92khNXj2svIOQmnz3vH78uIWIhpGxx8wqm9hsvVGnlzBRkmj41UVIfh+3yMq7tThb8LqFNa0PhBu93lwuHrWeS16vauZ86K9HL1uNJmAHkHl3DElybunAtfqO7OEvrUF009C1Ol1x5YYR8WESqXKeMjSNKKpYEpGDkr5gxr1T+iNPoXdvltk3UFSg9IoFas1EVmLRWpMFdseGwnQ815sIBC7gScyCRD4h4k2VPw4DEVBxrNxjjrjDSoX7oLOQ1j2CcXTXiodDySxn1G1PgElxJaRYTuWGvZ1/enXhjp+rXX6gPm7hrGxCHbnbw==",
         "updated": "2026-09-29T13:51:31.919Z"
       }
+    },
+    {
+      "username": "programming1414",
+      "role": "editor",
+      "created": "2026-09-29T13:54:01.614Z",
+      "kdf": {
+        "name": "PBKDF2",
+        "hash": "SHA-256",
+        "iterations": 600000,
+        "salt": "zBbZQxJUhjFw3xTfwVQRMw=="
+      },
+      "privateKey": {
+        "alg": "AES-GCM",
+        "iv": "+B3QOW4xOVZxWPTq",
+        "data": "MAzpv7KF02r9x8q2CEZPqDnVrLe+BEGJ5kAPfidDm7lKWR7BTNRbv1SqwYGJ/pi1oQ2O9nc4uHhEerrbaHPgdJ41Z/676LgVJDD3jzKbHkbIolmVPe4Tij/pf5Vbka7qa/fLq+ztLVqoP10kLBLjzUkTMcnUvdRUUx/Ti9ZDuJsAlabPlSNzhSz9zVVoDWQ9M4dJtdrVGaQuyEX29Rnw3yxNHKIvmafVSkTIahM3J7OsLvlS1wE3YsLIrMflTqVf5KrLrriyn0uokjqJZ4WhrXN5vXcehQhbwbrLMpyFuS2Jthu6fuIgyx7QxrkvJBD0woYc0su7eSzr01dL5wNUKSRIUCk15ZFV3XjkbAfS3gw4khohRtF2LWfz8sXhqD9ihKlQzJ55qBLZjgMBYUwJWdRal0Pif9XIFNn4n7flXTipEVyw9fcNBMEJDYByBYOvlTlWlnbALxEBQDxB5kE0NO+1B1ooxOxId27OA9Po65/eU7jGwyNWsBURcWny/uOoV6XofN6HYMpU507BmytYl0vRlVXZPMANjQ4NwSosgydIiH5oi8P1HmKEqhWt+FP6V3Q5eJit0V5wRGVcsYVxFz8WLzYh3ovO7u78pArktIi/gszrOggp+EVlVUx40AHNM9waE0nDN/GCytlMnOQLeFhmblFn5RGoC0Yry1kyHVt+5ig/C2f8NTeiaA+VdLcxmPrUS/rfy2YrI3sT4hxE4gIpwr25w+H9qx+8bumbqQx591QDIY10hI2vN6yd2fug499ZY+cRQcgYhT7+DH31p8VxE0RxvHaPJ3nd4Mcrc+bUXMGjNt5IYMWpHCWbhBVgXCNs/HjjbDMmKT0+m8nABqiLU9ZgNcU67Es+PUd6aFlq1JXIWmjPqFCj6Hc+Y8G9XUq1IKb6ESPXx2TB0VEjQYYkj3sZn+ZWQhr6PSQq48UqN0pECsdGKkGogZsDm/M7EKN8Qqqma4seSwyXUDqIohKfRx0bzgUqKrKpXOFSApCVozZHmJkiKtJShF/ahLO8AuZ94dMaFR1w6KlqUapExqbaKTWgpxiXcJhBaKDB/929/0a8aCcDHnlQH/CCf08x4qA2AYx44NJSLtzuaRKpeEDFzivGX6x9ml7bVKL5n511Be/80DKaiNHeexuCNC86693tQ7JxPF53FZ4/yOfHhSwSAJyR1nXI/F6KvJr+ZMLK6GSiwLAFVjWD1lUat4hkIsDDHmE4tIsvvhL0sBh66EWOhC9vrWm9N9G8yiXWKSSd+Ty+E3i52nEXckdpqym+hPDBfEZ4Ap5ZcEfFpBzOwSY5N6ygaaNZQgMP7bDLAQQpKPoJ7dCmYU8re0Xej+4t73fAgZNygrBMHlBYAhT270PCBGWBnbPjawqGr89472r34VapguFzztmlwOo3G18Fh4/jfThEdqnRtZTlEULSaOghfF9WCHcHGr3a84Kj/mdjYFij2lCDAxcMgIlrvVvKtHbycNMGVrYaRQWYpWgftqDXpnZw6CP+749Z9c9TyXR9vz4Na+kY1yvVb6uJ+IgLVPigmr/B9WBlGasRTU+licfcRVvW/W7oFut/LawT21EOOSYz1EdXZRwbR15BxKLx3w8En1qjhXSWOWFhhYsyuA/+phvsK0ndw4e0LAqW3YFm"
+      },
+      "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAojBVS0rOaTEDYNAHjQk4Sw3TQVowJDTKoPBxGlk8YwLYq6HCvDVksnY1nxhZQNZn0r7aFbgTwYfZ30twAHuZUwdCZA+VYQAH004lUgylnd/Rers2Dnz1eBWk8K2ZaZ+vJC8RUGN2EyoIVYJCoOZaCjlsoFU6CxhZ8fu5TnPt6uY+BpURi93yGukOzqWOsUqOBY3qoCLE8QwKqZojKa96Uw+d1pGycvoXEKwOCSFh7D193WzxnwFU7AR7RMWTnlU5ECch1mzbFvTcOB7IqFbKm2eeMg6NPF3hTWXyPcNjRysOucaiDNh+vlrnAdHF3E8fPc5DjyqniAr1aPGzIG+6ZwIDAQAB",
+      "token": {
+        "alg": "RSA-OAEP-256",
+        "data": "aRElhsbSeaY5vT9iZs0nukMg37ulqEXt0ZrRW8kp4cuMgSTpNImUd5qPIz9qyuABDlkRKufzLh/isivmh1N/NqL+J9HSS6TlOUiEkgCZAJ+nxnw+rk605gue/mFezLu9Bk1f+QAGHPfQusHEfbbh92FSJ5d3StOGICo5BzT7OF4a6odhCMFgdilriUBZOiGEE/3ICwW3cCbJ284cZSsABbX8+ewuB1CoeBb9g2mopJ0Z64L1P3Payo4kNvObvuGnXFlxJZqbKXMoLUMmf/Nc66M1kGuJY2TUsW6y2sg7GfOxSS2e7H6YjInysuKZR5JWJdravmxy/vnE7tFMR/vy1Q==",
+        "updated": "2026-09-29T13:54:01.614Z"
+      }
     }
   ]
 }
