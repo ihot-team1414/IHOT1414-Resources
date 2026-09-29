@@ -1,5 +1,28 @@
 {
   "_README": "Managed from the site (Editor tools page). Contains no passwords and no plaintext tokens. See ADMIN.md.",
   "version": 1,
-  "editors": []
+  "editors": [
+    {
+      "username": "admin1414",
+      "role": "admin",
+      "created": "2026-09-29T13:51:31.918Z",
+      "kdf": {
+        "name": "PBKDF2",
+        "hash": "SHA-256",
+        "iterations": 600000,
+        "salt": "wp477f6sh1taNC6jPW/Brw=="
+      },
+      "privateKey": {
+        "alg": "AES-GCM",
+        "iv": "sFkb8RPfkUpU9E7+",
+        "data": "G8AfROmoGhZqg7+hAr2TmZkQ4rqWRdS0h+GknwUocK/kGFzFAaqWLNVhErqWDXG93ClsOe7CgfJyIqosf1442MrgCj5Vw/OkZTSoawAs4Fx1CmZd5P7hVWO1jADpDIQYy/crgSQzubInec7ATdeY+2lEfkPNML65JQxOO2tbYND9hD9ERMuzs1vjz6XZPgGmo3uXu1PciYXeWZi7g//AFcIeOWZGSR20qX6BbGXlyfWwMx8OJ5jL17uEtI6lLMiMnzZSdN+bTyFqkpdSQcNjoQxy/+Zkhpq7E8oIMQViWl6xz66JPcE/lhUc7EAjRJxEIAYmhyP0iz3yS65KZKLZTB109U7FGIm5XkDaNKAk5p2Ia+s0gV0Fdvdngg4BU5NQjlahkicfGZGVkcwEQSTjVbZe+nVK9ncNt9VivIHWgvvxavDbeXDcXlhuBaXBeUt8BH0x8D9/6tUSivJgyk+l+hUGZ5JQRp9qdXcpfftbXiRWeCNaFP1m+uC7PDfmFQcuNjBcOvN5CXuUu2UXVVogl5eJwcuSS6uxY7PBbc3n5l+wtYrwsdUOTsOEelrRl/AKC6P/m059+pbo6wxPZQTyhua1sYIvDnirQOmggWPCwDVQpJ+9w+F+LHsaSfGfRH+PsL1hcv/KDL2eIcNyev+Nup/9PJiX1CrZjK5WSF58b27h88t5+Hsx10DAbQSTEjVaTo98P8q43D/LYWqsvCink4XK6M+5DjzVv1wWJjSm2ViWtZL1SuY7yQU3A/YXnThP0wDusy/RK4J3OScBWs8D0eVBshgh5dMTZjCe59zcjQj6pPX2WE9ODD/Z1W16pJktnBkLoFlW43y+GU1Hu2oCYrvjk3amMTftejOAJEs6DvLvn64KSlnUPj4+af2KceKsSE04ynCYPCReE48D/XItaEmSH1vPph4l+yVYdQZ2VeCUsX9m7uHh/9fcXMPQwFkJ3MBkGAvEmHW0ShG3b8OsPoZPTBFDWwEil/UvkA2lDBGxZOlF8ohdL/feFQQnnVyZ8LHlDeB1KWjgvaYfzlI4wu0GY6csQWdSGYEe2EKVCXnAtFjCkbpRbxuBUsyVVYXAg6+Tb/AHnjYS+vzwzwWGTwF64VJLsXN2tf3N1Esut27zg1LRbjJmTXxisq3VeQlk4VVnGMMFHSxCIoRqLIJQwlZcbWd8yiR3fSbJPZp9YOHjHytu7HSFSdGJ4vwYY8mg0y+nr9f7wQOjZratlaQ13xtjqOynf/+pZUIyUsVy0Vy/egqAhkvLjS8cMySM7kThW/1UyzCkoibzMGuDOTeijVGMWVSaDk5gQAxa8n+cGqyjn28EGtQmXuTokuXU6qhMavmQLHCkMyY3d3d4kQOzt/pnU7ZkkZxrqOLa8sdF+ssx3Ue1lhl0YAIpq3FTC5bRkMpaiMw5oTxiS60k8Pv0nzTuL77alcpLIqntwwfOzdToZnI7+8FtlGG6cjkWnUkGOKHpA/c/aUL2yHbUxMs4rvfo9jIwpXWaC7MN3aijc4hlw6B3gFobEy2XuwXiJa5nWJ/nTrY8ISOtJTC/1dZp4oDDdiCWsn1yO7PRNErRII6D2sQzxesZ415P3eIszkN7tZNPz1A5IfQZXPE/NstGBYoTGej0W4em5TmQ1jAc+cCIiw=="
+      },
+      "publicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1JWauc9fSW2tUQFeT8UOpUhg5KhatbLrp15i5akOlY2elM9xinhsRJyBsEPNh4mgI0tMBHf/j68GQ9/rpeOwWQK33eA412j/MC8XqjEZdw8cgBDjRnwYtn0Ww0WDv1idv7yMiURqOHjA6/acGaYNKauywCHfM+B9Sm5ikJItzoPkP2qJ3x1oGtaPvbOaVgW9TykcZb+ZXCuie5I7pq4ZF+Fee0XCETTeLkSr03EQSgKEdY38ShN+aqDKHBHcthNHLiW3i0jGR08TkEJzwj5gqr/7NavYmgloBoR+wKBFnS0aqREcAzFdYuU3kIoWjuq5sb8vh4+KLPVsjnrzM1z1OwIDAQAB",
+      "token": {
+        "alg": "RSA-OAEP-256",
+        "data": "ju9XNFIe/89NQ2CYjBVJPP0t2QBM92khNXj2svIOQmnz3vH78uIWIhpGxx8wqm9hsvVGnlzBRkmj41UVIfh+3yMq7tThb8LqFNa0PhBu93lwuHrWeS16vauZ86K9HL1uNJmAHkHl3DElybunAtfqO7OEvrUF009C1Ol1x5YYR8WESqXKeMjSNKKpYEpGDkr5gxr1T+iNPoXdvltk3UFSg9IoFas1EVmLRWpMFdseGwnQ815sIBC7gScyCRD4h4k2VPw4DEVBxrNxjjrjDSoX7oLOQ1j2CcXTXiodDySxn1G1PgElxJaRYTuWGvZ1/enXhjp+rXX6gPm7hrGxCHbnbw==",
+        "updated": "2026-09-29T13:51:31.919Z"
+      }
+    }
+  ]
 }
