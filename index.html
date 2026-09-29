@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>IHOT Robotics | FRC Team 1414</title>
+  <meta name="description" content="IHOT Robotics is FIRST Robotics Competition Team 1414 from Atlanta International School. Guides, training and resources for programming, CAD, fabrication, electrical, operations and scouting.">
+  <meta name="theme-color" content="#07121f">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Social cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IHOT Robotics">
+  <meta property="og:title" content="IHOT Robotics | FRC Team 1414">
+  <meta property="og:description" content="Built by students. Engineered to compete. The resource hub for FRC Team 1414 from Atlanta, Georgia.">
+  <meta property="og:url" content="https://ihot-team1414.github.io/IHOT1414-Resources/">
+  <meta property="og:image" content="https://ihot-team1414.github.io/IHOT1414-Resources/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The IHOT 1414 competition robot over a navy and blue gradient with the IHOT Robotics logo.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@IHOT1414">
+
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/logo/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="vendor/fonts/space-grotesk-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="vendor/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="modulepreload" href="js/main.js">
+  <link rel="modulepreload" href="js/pages/home.js">
+  <link rel="modulepreload" href="js/icons.js">
+  <link rel="modulepreload" href="js/ui.js">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/resources.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="site-nav" data-scrolled="false">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="#/" aria-label="IHOT Robotics home">
+        <img src="assets/logo/ihot-wordmark.png" alt="IHOT Robotics" width="399" height="160">
+      </a>
+      <div class="nav-right">
+        <span class="nav-edit-badge" hidden></span>
+        <nav class="nav-menu" data-open="false" aria-label="Pages">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+            <span class="nav-toggle-text"><span class="nav-current-label">Page:</span> Home</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            <svg class="burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            <span class="sr-only">Open page menu</span>
+          </button>
+          <div class="nav-panel" id="nav-panel">
+            <!-- Filled from content/site.json by js/nav.js. Fallback links for no-JS: -->
+            <ul>
+              <li><a class="nav-link" href="#/">Home</a></li>
+              <li><a class="nav-link" href="#/team/programming">Programming</a></li>
+              <li><a class="nav-link" href="#/team/cad">CAD</a></li>
+              <li><a class="nav-link" href="#/team/fabrication">Fabrication</a></li>
+              <li><a class="nav-link" href="#/team/electrical">Electrical</a></li>
+              <li><a class="nav-link" href="#/team/operations">Operations</a></li>
+              <li><a class="nav-link" href="#/team/scouting">Scouting</a></li>
+              <li><a class="nav-link" href="#/login">Login / Editor</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <div class="page-loading"><span class="spinner" aria-hidden="true"></span><span class="sr-only">Loading</span></div>
+    <noscript>
+      <div class="container" style="padding:8rem 1rem">
+        <h1>IHOT Robotics · FRC Team 1414</h1>
+        <p>This site needs JavaScript to show the team's resources. Please enable JavaScript and reload.</p>
+      </div>
+    </noscript>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div id="sr-status" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting… | IHOT 1414</title>
+<meta name="robots" content="noindex">
+<script>
+  // GitHub Pages serves this file for any unknown path. The site uses hash
+  // routes, so turn /IHOT1414-Resources/team/cad into /IHOT1414-Resources/#/team/cad.
+  (function () {
+    var parts = location.pathname.split('/').filter(Boolean);
+    var isProjectSite = /\.github\.io$/.test(location.hostname) && parts.length > 0;
+    var base = isProjectSite ? '/' + parts.shift() + '/' : '/';
+    var rest = parts.join('/');
+    location.replace(base + (rest ? '#/' + rest : ''));
+  })();
+</script>
+</head>
+<body style="background:#07121f;color:#f5f8fc;font-family:system-ui,sans-serif">
+  <p style="padding:2rem">Redirecting… <a style="color:#7ea9dd" href="./">Go to the IHOT 1414 home page</a>.</p>
+</body>
+</html>

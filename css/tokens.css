@@ -1,0 +1,121 @@
+/* ==========================================================================
+   IHOT 1414 design tokens
+   Every color is derived from the logo blue #3E75B7 (hue 213°).
+   Use these variables instead of hard-coded colors anywhere on the site.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../vendor/fonts/space-grotesk-latin-wght.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../vendor/fonts/inter-latin-wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../vendor/fonts/inter-latin-ext-wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  /* --- Palette ---------------------------------------------------------- */
+  --navy-950: #07121f;   /* page background */
+  --navy-900: #0c1c2e;   /* raised surfaces, alternate sections */
+  --navy-800: #142943;   /* cards on navy-900, borders */
+  --blue-700: #22446d;   /* in-between blue */
+  --blue-600: #2f5a8e;   /* in-between blue, hover for dark buttons */
+  --ihot-blue: #3e75b7;  /* THE brand blue (from the logo) */
+  --blue-400: #598fcf;   /* in-between light blue */
+  --blue-300: #7ea9dd;   /* links & accents on navy (7.7:1 on navy-950) */
+  --blue-100: #d6e4f5;   /* focus rings, highlights */
+
+  --white: #f5f8fc;      /* primary text on navy (17.7:1) */
+  --gray-300: #b6c2d2;   /* secondary text (10.4:1) */
+  --gray-500: #8595ab;   /* muted text, meta (6.2:1 on navy-950) */
+
+  /* --- Semantic --------------------------------------------------------- */
+  --bg: var(--navy-950);
+  --bg-alt: var(--navy-900);
+  --surface: rgba(20, 41, 67, 0.55);           /* navy-800 @ 55% */
+  --surface-solid: var(--navy-900);
+  --border: rgba(126, 169, 221, 0.16);          /* blue-300 @ 16% */
+  --border-strong: rgba(126, 169, 221, 0.32);
+  --text: var(--white);
+  --text-2: var(--gray-300);
+  --text-3: var(--gray-500);
+  --link: var(--blue-300);
+  --accent: var(--ihot-blue);
+  --focus: var(--blue-100);
+  --mark-bg: rgba(126, 169, 221, 0.32);         /* search highlight */
+
+  /* Status colors stay inside the blue family on purpose (no extra accents). */
+  --ok: var(--blue-300);
+  --danger-bg: #1d2a3d;
+
+  /* --- Gradients -------------------------------------------------------- */
+  --grad-hero: radial-gradient(120% 90% at 85% 100%, rgba(62, 117, 183, 0.85) 0%, rgba(47, 90, 142, 0.45) 30%, rgba(20, 41, 67, 0) 65%),
+               linear-gradient(165deg, var(--navy-950) 0%, var(--navy-900) 45%, var(--navy-800) 75%, var(--blue-700) 100%);
+  --grad-band: linear-gradient(90deg, var(--navy-800), var(--blue-700) 50%, var(--navy-800));
+  --grid-line: rgba(126, 169, 221, 0.07);
+
+  /* --- Type ------------------------------------------------------------- */
+  --font-display: "Space Grotesk", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: clamp(1.2rem, 1.05rem + 0.6vw, 1.45rem);
+  --fs-xl: clamp(1.55rem, 1.2rem + 1.4vw, 2.2rem);
+  --fs-2xl: clamp(2rem, 1.4rem + 2.6vw, 3.3rem);
+  --fs-hero: clamp(2.5rem, 1.3rem + 3.9vw, 4.4rem);
+
+  /* --- Space & shape ---------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: clamp(4.5rem, 3rem + 6vw, 8rem);
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2rem);
+  --maxw: 1200px;
+  --maxw-text: 68ch;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --nav-h: 68px;
+
+  /* --- Motion ----------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 150ms;
+  --dur-2: 280ms;
+  --dur-3: 600ms;
+
+  --shadow-1: 0 1px 0 rgba(214, 228, 245, 0.04) inset, 0 12px 32px -12px rgba(0, 0, 0, 0.55);
+  --shadow-2: 0 30px 80px -30px rgba(7, 18, 31, 0.9);
+
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-1: 0ms;
+    --dur-2: 0ms;
+    --dur-3: 0ms;
+  }
+}

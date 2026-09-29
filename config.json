@@ -1,0 +1,21 @@
+{
+  "_README": "Site-wide settings. The editor reads the GitHub repo from here when it saves. See ADMIN.md before changing anything in 'github'.",
+  "github": {
+    "owner": "ihot-team1414",
+    "repo": "IHOT1414-Resources",
+    "branch": "main"
+  },
+  "siteUrl": "https://ihot-team1414.github.io/IHOT1414-Resources/",
+  "uploads": {
+    "_note": "GitHub rejects files over 100 MB and GitHub Pages cannot serve Git LFS files. Keep video limits well below that; use YouTube or Google Drive for anything large.",
+    "maxImageMB": 15,
+    "maxPdfMB": 25,
+    "maxVideoMB": 50,
+    "warnVideoMB": 15,
+    "imageMaxDimension": 2000,
+    "imageQuality": 0.82
+  },
+  "security": {
+    "pbkdf2Iterations": 600000
+  }
+}
