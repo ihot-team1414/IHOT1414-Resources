@@ -26,7 +26,7 @@
     },
     {
       "username": "programming1414",
-      "role": "admin",
+      "role": "editor",
       "created": "2026-09-29T13:54:01.614Z",
       "kdf": {
         "name": "PBKDF2",
