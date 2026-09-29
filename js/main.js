@@ -52,6 +52,7 @@ async function route(r) {
     const ok = await leaveGuard.confirm();
     if (!ok) { history.replaceState(null, '', state.lastHash || '#/'); return; }
   }
+  state.prevHash = state.lastHash;
   state.lastHash = location.hash;
   updateNav(r);
 
@@ -97,7 +98,7 @@ async function route(r) {
     await unmountCurrent();
     const mod = await import('./pages/account.js');
     window.scrollTo(0, 0);
-    state.page = await mod.mountAccountPage(app, { site: state.site, config: state.config, view: r.name, tab: r.params.tab, query: r.query });
+    state.page = await mod.mountAccountPage(app, { site: state.site, config: state.config, view: r.name, tab: r.params.tab, query: r.query, from: state.prevHash });
     setTitle(r.name === 'login' ? 'Editor login' : 'Editor tools');
     focusHeading();
     return;
